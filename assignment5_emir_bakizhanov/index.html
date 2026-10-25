@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 | Emir Bakizhanov</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>JavaScript Basics</h1>
+                <p>Assignment #5 — DOM Manipulation & Events</p>
+                <span class="student-name">Emir Bakizhanov</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section" id="part1">
+            <div class="section-heading">
+                <span class="section-number">01</span>
+                <div>
+                    <h2>Personal Profile</h2>
+                    <p>Part 1: Objects, Data Types & Arithmetic</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-header">
+                    <div class="avatar">EB</div>
+                    <div>
+                        <h3 id="profileName">Emir Bakizhanov</h3>
+                        <p>JavaScript Student</p>
+                    </div>
+                </div>
+
+                <div class="profile-details">
+                    <div class="detail">
+                        <span>Name</span>
+                        <strong id="displayName"></strong>
+                    </div>
+
+                    <div class="detail">
+                        <span>Birth Year</span>
+                        <strong id="displayYear"></strong>
+                    </div>
+
+                    <div class="detail">
+                        <span>Developer</span>
+                        <strong id="displayDeveloper"></strong>
+                    </div>
+
+                    <div class="detail">
+                        <span>Current Year</span>
+                        <strong id="displayCurrentYear"></strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="statistics">
+                <div class="stat-card">
+                    <p>Age</p>
+                    <h3 id="displayAge">0</h3>
+                    <span>Years</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Approximate Age</p>
+                    <h3 id="displayMonths">0</h3>
+                    <span>Months</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Total Hobbies</p>
+                    <h3 id="displayCount">0</h3>
+                    <span>Activities</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="part2">
+            <div class="section-heading">
+                <span class="section-number">02</span>
+                <div>
+                    <h2>Update Profile</h2>
+                    <p>Part 2: Form Input & Event Responses</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Enter your username"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthYear">Birth Year</label>
+                        <input
+                            type="number"
+                            id="birthYear"
+                            min="1900"
+                            placeholder="Enter your birth year"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Create / Update Profile
+                    </button>
+
+                    <p id="formMessage" class="message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="part3">
+            <div class="section-heading">
+                <span class="section-number">03</span>
+                <div>
+                    <h2>My Hobbies</h2>
+                    <p>Part 3: DOM List Manipulation</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="list-header">
+                    <h3>Hobbies List</h3>
+                    <span id="listCounter">0 Items</span>
+                </div>
+
+                <ul id="hobbyList" class="hobby-list"></ul>
+
+                <div class="form-group">
+                    <label for="newHobby">New Hobby</label>
+                    <input
+                        type="text"
+                        id="newHobby"
+                        placeholder="Enter a new hobby"
+                    >
+                </div>
+
+                <div class="button-group">
+                    <button id="addItemBtn" class="btn btn-primary">
+                        Add Item
+                    </button>
+
+                    <button id="removeItemBtn" class="btn btn-secondary">
+                        Remove Last Item
+                    </button>
+                </div>
+
+                <p id="listMessage" class="message" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Assignment #5 — JavaScript Basics</p>
+        <p>Created by Emir Bakizhanov</p>
+    </footer>
+</body>
+</html>
